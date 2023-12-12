@@ -1,7 +1,7 @@
 public class Person {
-    public String firstName;
-    public String lastName;
-    public int age;
+    private String firstName;
+    private String lastName;
+    private int age;
 
     // Constructor & Misc
     public Person(String firstName, String lastName, int age) {
@@ -25,5 +25,18 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    // Accessors
+    public String getFirstName() {
+        return this.firstName;
+    }
+
+    public String getLastName() {
+        return this.lastName;
+    }
+
+    public int getAge() {
+        return this.age;
     }
 }
